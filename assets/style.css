@@ -53,7 +53,7 @@ body {
 }
 
 a {
-  color: var(--white-light-color);
+  color: var(--white-color);
   text-decoration: none;
 }
 
@@ -161,7 +161,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--green-alpha-color);
+  background-color: var(--primary-alpha-color);
   opacity: 0;
   pointer-events: none;
   transition: all 1s;
@@ -178,7 +178,7 @@ ul {
   width: 1.875rem;
   height: 1.875rem;
   border-radius: 0.2rem;
-  background-color: var(--darkered-color);
+  background-color: var(--primary-color);
 }
 
 .modal-close svg {
@@ -303,7 +303,7 @@ ul {
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: center;
-  color: var(--blue-darkered-color);
+  color: var(--tertiary-color);
 }
 
 .text-info {
@@ -359,11 +359,11 @@ ul {
 }
 
 .about-col-1 li:last-child span {
-  background-color: var(--light-blue-color);
-  padding: 0.1rem 0.5rem;
-  border-radius: 0.2rem;
-  color: var(--black-color);
+  padding: 0.2rem 0.5rem;
   font-weight: bold;
+  color: var(--white-color);
+  border-radius: 0.2rem;
+  background-color: var(--secondary-color);
 }
 
 .about-col-1 strong {
@@ -458,7 +458,7 @@ ul {
   height: 8rem;
   margin-left: auto;
   margin-right: auto;
-  border: thick solid var(--white-opaque-color);
+  border: thick solid var(--white-color);
   border-radius: 50%;
   overflow: hidden;
 }
@@ -530,7 +530,7 @@ ul {
 }
 
 .project-modal h3 {
-  border-bottom: medium solid var(--blue-dark-color);
+  border-bottom: medium solid var(--tertiary-color);
   padding: 0.5rem 0;
   margin: 1rem auto;
 }
@@ -538,6 +538,10 @@ ul {
 .project-info p {
   margin-bottom: 1rem;
   font-size: 0.85rem;
+}
+
+.project-info a {
+  text-decoration: underline;
 }
 
 .project-details {
@@ -548,7 +552,7 @@ ul {
 }
 
 .project-details b {
-  color: var(--blue-dark-color);
+  color: var(--tertiary-color);
 }
 
 .skills-col {
@@ -761,7 +765,7 @@ ul {
 
 .experience-item {
   border-right: none;
-  border-left: 2px solid var(--blue-darkered-color);
+  border-left: 2px solid var(--tertiary-color);
   margin-right: 0;
   margin-left: 20px;
 }
