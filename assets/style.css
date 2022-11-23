@@ -877,7 +877,7 @@ ul {
   font-size: 0.6rem;
   background-color: var(--primary-color);
   border-radius: 5px;
-  user-select: all;
+  user-select: none;
 }
 
 /* ********* Clases que se añaden con Javascript ********* */
