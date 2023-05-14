@@ -189,6 +189,75 @@ ul {
   pointer-events: auto;
 }
 
+/* ********** Toast ********** */
+.toast-container {
+  position: fixed;
+  right: .2rem;
+  bottom: 3.5rem;
+  left: .2rem;
+  margin: auto;
+  width: 100%;
+  max-width: 300px;
+  background-color: green;
+  border-radius: .5rem;
+  overflow: hidden;
+  transform: translateY(150%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s ease;
+  z-index: 999;
+}
+
+.toast-container.error {
+  background-color: red;
+}
+
+.toast-container.active {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.toast {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toast-content {
+  padding: 8px;
+  display: grid;
+  grid-template-columns: 30px auto;
+  align-items: center;
+  gap: 1rem;
+}
+
+.toast-close {
+  padding-right: 5px;
+  padding-left: 5px;
+  background-color: rgba(0, 0, 0, .1);
+  border: none;
+  cursor: pointer;
+  transition: .3s all ease;
+}
+
+.toast-close:hover {
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.toast-close-icon {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (min-width: 37.5em) {
+  .toast-container {
+    right: 1rem;
+    bottom: 1rem;
+    left: unset;
+    margin: unset;
+  }
+}
+
 /* ********** Utilities ********** */
 
 .btn {
