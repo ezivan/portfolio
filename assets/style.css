@@ -15,7 +15,36 @@
   --btn-width: 10.375rem;
   --max-widht: 1024px;
   --font-family: "Work Sans", sans-serif;
-  --secondary-font-family: "Audiowide", cursive;
+  --secondary-font-family: "Raleway", cursive;
+}
+
+/* ********** Fonts ********** */
+@font-face {
+  font-family: "Raleway";
+  src: url(../static/Raleway-Black.ttf) format(truetype);
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url(../static/WorkSans-Thin.ttf) format(truetype);
+  font-style: normal;
+  font-weight: thin;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url(../static/WorkSans-Regular.ttf) format(truetype);
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url(../static/WorkSans-Bold.ttf) format(truetype);
+  font-style: normal;
+  font-weight: Bold;
 }
 
 /* 
@@ -321,7 +350,7 @@ ul {
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(to bottom, #0c0c0c96, #0c0c0cf2),
-    url(./hero-image.jpg);
+    url(../img/hero-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -690,7 +719,7 @@ ul {
   }
 
   100% {
-    width: 60%;
+    width: 20%;
   }
 }
 
@@ -704,7 +733,7 @@ ul {
   }
 
   100% {
-    width: 40%;
+    width: 30%;
   }
 }
 
@@ -732,7 +761,7 @@ ul {
   }
 
   100% {
-    width: 60%;
+    width: 30%;
   }
 }
 
@@ -879,7 +908,7 @@ ul {
   margin-top: 1rem;
   padding-bottom: 3rem;
   background-image: radial-gradient(var(--black-alpha-color), transparent),
-    url(./contact_bg.png);
+    url(../img/contact_bg.png);
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1022,6 +1051,7 @@ ul {
     grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
     justify-content: space-evenly;
     align-content: center;
+    align-items: center;
   }
 
   .header {
